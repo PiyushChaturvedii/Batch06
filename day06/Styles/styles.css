@@ -1,0 +1,29 @@
+h1{
+    color: blue;
+    font-size: 2em;
+    text-align: center;
+}
+
+ p{
+            color: rgb(207, 8, 238);
+            font-size: 18px;
+            line-height: 1.5;
+            margin: 20px;
+        }
+
+        #id1 {
+            color: green;
+            font-size: 20px;
+            text-align: center;
+        }
+        .blue{
+            color: blue;
+            font-size: 20px;
+            text-align: center;
+        }
+        .heading{
+            color: #2D4F2B ;
+        }
+        .subheading{
+            color: #708A58;
+        }
