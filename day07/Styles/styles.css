@@ -1,0 +1,44 @@
+
+        .blue{
+            /* background-image: url('https://images.unsplash.com/photo-1751378639257-0aca1af0089b?q=80&w=1405&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); */
+            background-image: url(/images/image1.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-origin: border-box ;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            background-color: blue;
+            padding: 20px 10px 5px 3px;
+            border: 10px black solid ;
+            outline-style: solid;
+            outline-color: red;
+            outline-width: 5px;
+            margin: 30px;
+            height: 500px;
+            width: auto;
+        }
+        .red{
+            color: red;
+            font-size: 20px;
+            text-align: center;
+            background-color: lightgreen;
+        }
+        .green{
+            color: green;
+            font-size: 20px;
+            text-align: center;
+            background-color: lightblue;
+            padding: 20px 10px 5px 3px  ;
+            border: 10px green ridge ;
+            margin: 30px 10px 20px 5px;
+        }
+        .yellow{
+            color: yellow;
+            font-size: 20px;
+            text-align: center;
+            background-color: lightgray;
+            padding: 20px 10px 5px 3px ;
+            border: 10px rgb(85, 3, 50) solid ;
+        }

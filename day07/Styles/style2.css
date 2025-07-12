@@ -1,0 +1,38 @@
+
+        .blue{
+            
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            background-color: blue;
+            padding: 20px 10px 5px 3px;
+            border: 10px black solid ;
+            /* float: left; */
+            z-index: 2;
+            position: fixed;
+        }
+        
+        .pink{
+            position: relative;
+           color: white;
+            font-size: 20px;
+            text-align: center;
+            background-color: pink;
+            padding: 20px 10px 5px 3px;
+            border: 10px black solid ;
+            /* clear: both;    */
+            z-index: 1;
+        }
+
+        .green{
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            background-color: green;
+            padding: 20px 10px 5px 3px;
+            border: 10px black solid ;
+            /* float: right; */
+            position: relative;
+            z-index: -1;
+        }
+        
