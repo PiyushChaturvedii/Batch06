@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS: Styling Link</title>
+    <style>
+        a:link{
+            color: yellowgreen;
+        }
+        a:hover{
+            font-size: 3em;
+        }
+        div.green a:link{
+            color: orange;
+        }
+        div.green a:visited{
+            color: aqua;
+        }
+        .blue{
+            background-color: blue;
+            color: white;
+            height: 100px;
+            width: auto;
+        }
+        .red{
+            background-color: red;
+            color: white;
+            height: 100px;
+            width: auto; 
+        }
+        .green{
+             background-color: green;
+            color: white;
+            height: 100px;
+            width: auto;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="blue">
+      <p>Facebook</p>
+      <p><a href="https://facebook.com/search">Visit Link</a></p>
+    </div>
+    <div class="red">
+      <p>Flipcart</p>
+      <p><a href="https://flipcart.com/search">Visit Link</a></p>
+    </div>
+    <div class="green">
+      <p>Amazon</p>
+      <p><a href="https://amazon.com/search"> Visit Link </a></p>
+    </div>
+  </body>
+</html>

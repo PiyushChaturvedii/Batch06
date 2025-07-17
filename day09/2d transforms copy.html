@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS: 2d transforms</title>
+    <style>
+      .blue {
+        /* background-color: blue; */
+        color: white;
+        height: 100px;
+        width: auto;
+        /* background: linear-gradient(to left, blue,white, orange); */
+        /* background: linear-gradient(to left,rgba(0,0,255,0.5),rgba(0,0,255,1)); */
+        background: radial-gradient(circle, green 5%,white 25%,orange 70%);
+      }
+      .red {
+        background-color: red;
+        color: white;
+        height: 100px;
+        width: 100px;
+        /* transform: translate(105px,30px); */
+        /* transform: rotate(30deg); */
+        /* transform: scale(0.5,1); */
+        /* transform: skew(30deg); */
+        transform: scale(0.5) skew(51deg) translate(-76px,98px);
+-webkit-transform: scale(0.5) skew(51deg) translate(-76px,98px);
+-moz-transform: scale(0.5) skew(51deg) translate(-76px,98px);
+      }
+      .green {
+        /* background-color: green; */
+        background: #3F5EFB;
+background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+        color: white;
+        height: 100px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="blue">
+      <p>Facebook</p>
+    </div>
+    <div class="red">
+      <p>Flipcart</p>
+    </div>
+    <div class="green">
+      <p>Amazon</p>
+    </div>
+  </body>
+</html>
