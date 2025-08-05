@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Bio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- BootStrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <!-- BootStrap Icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body class="vh-100 bg-dark text-light">
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand"
+          ><span class="badge bg-danger shadow">Raju</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMain"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="z-index: 10">
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link active"
+                data-bs-toggle="collapse"
+                data-bs-target=".multi-collapse"
+                aria-expanded="false"
+                aria-controls="about contact"
+                >Info</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="#about"
+                role="button"
+                class="nav-link"
+                data-bs-toggle="collapse"
+                aria-expanded="false"
+                aria-controls="about"
+                >About</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                href="#contact"
+                role="button"
+                class="nav-link"
+                data-bs-toggle="collapse"
+                aria-expanded="false"
+                aria-controls="contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- HEADER -->
+    <header class="container fixed-top text-end mt-5">
+      <h1 class="display-1">
+        Hello, I am <span class="badge bg-secondary">Raju Gentleman</span>
+      </h1>
+      <h2 class="display-3">Web Developer</h2>
+
+      <!-- HEADER > Portfolio & Email Btn Group -->
+      <div class="btn-group">
+        <!-- Profile Btn -->
+        <button
+          class="btn btn-outline-danger text-uppercase"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#portfolio"
+          aria-controls="portfolio"
+        >
+          My Portfolio
+        </button>
+
+        <!-- Email Btn -->
+        <button
+          class="btn btn-danger"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#email"
+          aria-controls="email"
+        >
+          <i class="bi bi-envelope-open"></i>
+        </button>
+      </div>
+
+      <!-- HEADER > About & Contact dropdown content -->
+      <div class="row mt-3">
+        <!-- About  -->
+        <div class="col-md-6 mt-3">
+          <div class="collapse multi-collapse" id="about">
+            <div class="card card-body text-start shadow bg-dark-transparent">
+              <h5 class="card-title text-danger">About</h5>
+              <div class="card-text">
+                <h3 class="text-white-50 ms-3">Raju Gentleman</h3>
+                <ul class="list-unstyled ms-5">
+                  <li>CEO of Apple</li>
+                  <li>Full Stack Web Developer</li>
+                  <li>Course Teacher</li>
+                  <li>YouTube Content Creator</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Contact -->
+        <div class="col-md-6 mt-3">
+          <div class="collapse multi-collapse" id="contact">
+            <div class="card card-body text-start shadow bg-dark-transparent">
+              <h5 class="card-title text-danger">Contact</h5>
+              <div class="card-text">
+                <h3 class="text-white-50 ms-3">Get in touch:</h3>
+                <ul class="list-unstyled ms-5">
+                  <li>
+                    <i class="bi bi-house me-2 text-danger"></i>City: The City
+                  </li>
+                  <li>
+                    <i class="bi bi-signpost me-2 text-danger"></i>21, Shivaji Str.
+                  </li>
+                  <li>
+                    <i class="bi bi-telephone me-2 text-danger"></i>Phone:
+                    +555-555-555
+                  </li>
+                  <li>
+                    <i class="bi bi-envelope me-2 text-danger"></i>Email:
+                    raju@gmail.com
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- PROFILE IMG -->
+    <!-- PORTFOLIO OFFCANVES CONTENT -->
+    <!-- EMAIL OF CANVES CONTENT -->
+    <!-- FOOTER -->
+
+    <!-- BootStrap JS CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
