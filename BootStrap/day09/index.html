@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- BootStrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <!-- BootStrap Icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top shadow">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand font-monospace">ATR Media</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#Navbar"
+          aria-controls="Navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Navbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-uppercase">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#About" class="nav-link text-uppercase">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Team" class="nav-link text-uppercase">Team</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Services" class="nav-link text-uppercase">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Contact" class="nav-link text-uppercase">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- HEADER  -->
+    <header
+      class="vh-100"
+      style="
+        background: url(https://images.unsplash.com/photo-1462826303086-329426d1aef5?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+          center/cover no-repeat;
+      "
+    >
+      <div class="container mt-5 pt-5 h-25">
+        <h4 class="text-light font-monospace text-shadow animate-text-right">
+          Financial Planning For Life
+        </h4>
+        <h1 class="display-1 text-white text-shadow animate-text-right-3s">
+          Trusted to help guide entrepreneurs make better financial decisions.
+        </h1>
+        <button
+          class="btn btn-lg btn-info shadow mt-3 animate-text-right-5s"
+          data-bs-toggle="modal"
+          data-bs-target="#getOffer"
+        >
+          Get Offer
+        </button>
+      </div>
+      <!-- HEADER > GET STARTED CONTENT MODEL -->
+      <div
+        class="modal fade"
+        id="getOffer"
+        tabindex="-1"
+        aria-labelledby="getOfferLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="model-title" id="getOfferLabel">New message</h5>
+              <button
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form action="#">
+                <div class="mb-3">
+                  <label class="col-form-label">First name:</label>
+                  <input type="text" class="form-control" placeholder="Enter your first name" />
+                  <label class="col-form-label">Last name:</label>
+                  <input type="text" class="form-control" placeholder="Enter your Last name" />
+                  <label class="col-form-label"></label>
+                  <textarea class="col-form-label"></textarea>
+
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-danger">Close</button>
+              <button class="btn btn-primary" type="submit">
+                Send Message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ABOUT -->
+    <!-- ABOUT > ABOUT MODEL CONTENT-->
+    <!-- TEAM -->
+    <!-- FOOTER -->
+
+    <!-- BootStrap JS CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

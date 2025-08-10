@@ -1,0 +1,21 @@
+.text-shadow{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+.animate-text-right{animation: animateText 1.5s ease ;}
+.animate-text-right-3s{animation: animateText 3s ease ;}
+.animate-text-right-5s{animation: animateText 5s ease ;}
+
+
+
+@keyframes animateText{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
