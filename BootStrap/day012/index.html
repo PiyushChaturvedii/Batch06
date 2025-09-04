@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Theme</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- BootStrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <!-- BootStrap Icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="navbar fixed-top navbar-light bg-light">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand text-danger fw-border">
+          <i class="bi bi-camera"></i> iShoot
+        </a>
+        <button
+          class="navbar-toogler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <div class="navbar-nav">
+            <a href="#" class="navbar-link active" aria-current="page">Home</a>
+            <a href="#experience" class="navbar-link" aria-current="page"
+              >Experience</a
+            >
+            <a href="#portfolio" class="navbar-link" aria-current="page"
+              >Portfolio</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- HEADER -->
+    <header
+      class="row row-cols-2 vh-100 flex-row align-items-center justify-content-center"
+    >
+      <div
+        class="col-sm-6 container text-center text-sm-start"
+        style="width: 500px"
+      >
+        <div class="card-header bg-white font-monospace text-secondary">
+          PHOTOGRAPHER
+        </div>
+        <div class="card-body">
+          <div class="car-title display-1 fw-bold">Shotting Your Memories.</div>
+          <p class="card-text text-secondary mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Consequuntur, incidunt harum, earum ipsam deserunt cumque vero
+            officia laborum aliquam esse quo temporibus similique corporis ipsum
+            iusto saepe? Explicabo, eligendi exercitationem.
+          </p>
+          <div class="d-flex flex-sm-row flex-column mt-4">
+            <button
+              class="btn btn-danger btn-lg shadow"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#email"
+            >
+              <i class="bi bi-envelope"></i> Email Me Here !
+            </button>
+            <span class="fs-2 mt-5 mt-sm-0">
+              <a href="#"
+                ><i class="bi bi-facebook text-dark ms-sm-5 ms-2"></i
+              ></a>
+              <a href="#"
+                ><i class="bi bi-twitter text-dark ms-sm-5 ms-2"></i
+              ></a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER > FORM -->
+    <div class="modal fade" id="email" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">Book a shoot</div>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <form action="#" class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">First Name</label>
+                <input type="text" class="form-control" placeholder="Ram" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Last Name</label>
+                <input type="text" class="form-control" placeholder="Sharma" />
+              </div>
+              <div class="col-12">
+                <label class="form-control">Address</label
+                ><input
+                  type="text"
+                  class="form-control"
+                  placeholder="1234 Main street"
+                />
+              </div>
+              <div class="col-12">
+                <label class="form-control">Address 2</label
+                ><input
+                  type="text"
+                  class="form-control"
+                  placeholder="apartment 1, studio of floor"
+                />
+              </div>
+              <div class="col-6">
+                <label class="form-control">City</label
+                ><input
+                  type="text"
+                  class="form-control"
+                  placeholder="your city"
+                />
+              </div>
+              <div class="col-md-4">
+                <label class="form-label">State</label>
+                <select class="form-select">
+                  <option selected>Choose...</option>
+                  <option selected>State 1</option>
+                  <option selected>State 2</option>
+                  <option selected>State 3</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <label class="form-label">Zip</label>
+                <input type="text" class="form-control" placeholder="Zip" />
+              </div>
+              <div class="col-12">
+                <a
+                  href="#"
+                  class="text-link"
+                  role="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#terms_services"
+                  >Terms of Services.</a
+                >
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" />
+                <label class="form-check-label"> I agree</label>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary w-100 disabled">
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- HEADER > FORM > TERMS OF SERVICE -->
+     <div class="modal fade" id="terms_services" aria-hidden="true" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-header">
+          <div class="modal-title">Terms of Services</div>
+          <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta sapiente inventore laudantium id ullam blanditiis, aut suscipit. Maiores aliquid aut sint mollitia dolorum, quis vel voluptatem inventore doloremque dicta eum pariatur, doloribus beatae. Beatae asperiores reiciendis iusto quas aliquam et ullam id sit vero, exercitationem officiis, obcaecati, aperiam doloribus aliquid? Odit, quae laboriosam nostrum amet cum ea architecto recusandae veritatis quaerat cumque dolore numquam assumenda sit minima ipsam? Perferendis voluptatem nobis, veritatis facilis veniam hic suscipit porro cupiditate et dignissimos sunt, fuga eaque labore facere corporis a itaque? Neque a totam quidem distinctio assumenda vero illo cupiditate commodi dolor eaque labore aperiam voluptate eius fugit nam, et sit eveniet tempore. Veritatis blanditiis porro architecto deleniti repellendus soluta voluptas consequuntur inventore ducimus reprehenderit tempora sunt asperiores nemo ad, eveniet culpa ab distinctio nihil, repellat ipsum deserunt. Iusto aut, numquam natus reprehenderit corporis dolorum consectetur ipsam debitis alias? Tempora facere facilis accusamus quod molestias aperiam voluptas recusandae repellat, architecto eligendi quisquam adipisci eos veniam assumenda tempore nulla mollitia id sed odio autem nobis exercitationem laborum doloremque? Itaque soluta quasi suscipit hic vero molestias consequatur eum fuga pariatur sed vitae voluptas, corrupti nihil dicta minus labore laudantium ad asperiores recusandae architecto, beatae id odio nesciunt facilis. Quasi velit placeat iste sapiente, porro deleniti autem suscipit praesentium molestias expedita blanditiis eveniet ea ex? Atque ducimus eveniet magni quasi explicabo ullam aperiam aliquam repudiandae? Doloremque magni rem aspernatur assumenda. Hic aspernatur, ab accusantium, optio soluta perspiciatis maxime rerum incidunt omnis mollitia a esse explicabo nisi voluptas quibusdam dolor, blanditiis totam. Minima officia animi eos necessitatibus quam odio itaque voluptatem dolor sunt quas natus totam ea dolore quo repellat, unde quisquam. Obcaecati voluptas ex odit hic inventore culpa temporibus repellendus quis deleniti magnam nobis praesentium quaerat cum, tenetur voluptate asperiores illum. Laboriosam culpa error dolore placeat.
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+      </div>
+     </div>
+    <!-- MAIN -->
+    <!-- MAIN > EXPERIENCE  -->
+    <!-- MAIN > EXPERIENCE > TITLE -->
+    <!-- MAIN > EXPERIENCE > PHOTOS -->
+    <!-- MAIN > EXPERIENCE > PHOTOS -->
+    <!-- MAIN > EXPERIENCE > PHOTOS> PORTRAIT -->
+    <!-- MAIN > EXPERIENCE > PHOTOS> TRAVEL -->
+    <!-- MAIN > EXPERIENCE > PHOTOS> WEDDING -->
+    <!-- MAIN > EXPERIENCE > PHOTOS> NATURE -->
+    <!-- MAIN > Protfolio -->
+    <!-- FOOTER -->
+
+    <!-- BootStrap JS CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
