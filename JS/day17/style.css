@@ -1,0 +1,35 @@
+#navbar{
+    font-size: larger;
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+#heading{
+    color: red;
+}
+
+#h1-heading{
+    color: blue;
+}
+
+.container{
+    border: 2px solid black;
+    padding: 5px;
+    background-color: yellow;
+}
+
+#h2-heading{
+    color: yellowgreen;
+    font-weight: bold;
+}
+
+#desc{
+    color: brown;
+    font-weight: bold;
+    line-height: 30px;
+}
