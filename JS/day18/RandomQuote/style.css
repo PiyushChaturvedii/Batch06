@@ -1,0 +1,60 @@
+*{
+    font-family: "Roboto Slab", serif;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.quote{
+    width: 80%;
+    margin-bottom: 30px;
+    font-size: 3em;
+    opacity: 0;
+    /* opacity: 1; */
+}
+
+.author{
+    font-size: 1.5em;
+    opacity: 0;
+    /* opacity: 1; */
+}
+
+.btn{
+    margin-top: 60px;
+    font-size: 1.5em;
+    /* opacity: 1; */
+    opacity: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fadeIn{
+    opacity: 1;
+    transition: opacity 0.3 ease;
+}
+
+.fadeOut{
+    opacity: 0;
+    transition: opacity 0.3 ease;
+}
+.footer{
+    position: absolute;
+    bottom: 15px;
+}
+.footer span{
+    display: block;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer span a {
+    text-decoration: none;
+
+}
