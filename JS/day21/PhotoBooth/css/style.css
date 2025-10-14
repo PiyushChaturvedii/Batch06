@@ -1,0 +1,153 @@
+*{
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: antiquewhite;
+    text-shadow: 1px 2px blue;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: url('https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFja2dyb3VuZCUyMHRleHR1cmV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=1600') center;
+}
+
+.containerOne{
+    width: 750px;
+    height: 800px;
+    background: linear-gradient(rgba(7, 7, 94, 0.55),lightblue,blue);
+    box-shadow: 10px 10px 10px rgb(18, 18, 125)
+}
+
+
+.containerTwo{
+    width: 700px;
+    height: 750px;
+    margin: 20px;
+    background: linear-gradient(#162756,#445474,#885577);
+}
+
+.header{
+    height: 30px;
+}
+
+.header h5{
+    font-size: 1.5em;
+}
+
+.navOptions{
+    height: 100px;
+}
+
+.navs{
+    width: 33.33%;
+    height: 100%;
+    float: left;
+}
+.navs button, .takePhoto{
+width: 80%;
+margin-top: 10px;
+height: 35px;
+border: none;
+font-size: 1em;
+border-radius: 5px;
+box-shadow: 5px 5px 1px blueviolet;
+background-image: linear-gradient(blue,lightblue);
+}
+
+.navs button:hover{
+    background-image: linear-gradient(lightblue,blue);
+}
+
+.inputRange label{
+    width: 40%;
+    height: 20px;
+}
+
+.inputRange input{
+    width: 60%;
+    height: 4px;
+}
+
+.slider{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    outline: none;
+    opacity: 0.6;
+    -webkit-transition: .3s;
+    transition: opacity .2s;
+}
+
+.slider:hover{
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    background: burlywood;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb{
+    width: 12px;
+    height: 12px;
+    background: burlywood;
+    cursor: pointer;
+}
+
+.video{
+    display: none;
+}
+
+.canvas{
+    width: 680px;
+    height: 480px;
+    margin: 5px;
+    background: linear-gradient(lightblue,blue);
+    border: 1px dashed black;
+    border-radius: 5px;
+}
+
+.takePhoto{
+    width: 120px;
+    margin-top: 0px;
+}
+
+.shotsTaken{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.image{
+    width: 106px;
+    height: 80px;
+    background: linear-gradient(lightblue,blue);
+    margin: 8px 12px;
+    border: 1px dashed black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 106px;
+    height: 80px;
+    margin-top: 5px;
+}
+
+img:hover{
+    cursor: pointer;
+}
