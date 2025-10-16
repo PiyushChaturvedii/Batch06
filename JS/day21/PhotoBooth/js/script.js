@@ -10,7 +10,7 @@ class Video {
 
   //stream vedio
   stream() {
-    const video = document.querySelector(".vedio");
+    const video = document.querySelector(".video");
     // navigator media device detector
     navigator.mediaDevices
       .getUserMedia({ video: true, audio: false })
