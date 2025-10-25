@@ -1,0 +1,74 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- author -->
+    <meta name="author" content="Ram ">
+    <!-- description -->
+    <meta name="description" content="Ram  Tic Tac Toe">
+    <!-- keywords -->
+    <meta name="keywords" content="This is a Tic Tac Toe App. A Javascript Project by Ram ">
+    <!-- icon -->
+    <link rel='icon' href='/libs/aiman.png' type='image/x-icon'>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500;600;700&display=swap"
+      rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Aimanski | Tic Tac Toe</title>
+  </head>
+
+  <body>
+    <div class="message">
+      <div class='sign'>
+        <h1>You Win!</h1>
+      </div>
+    </div>
+    <div class="container">
+
+      <!-- header -->
+      <div class="header">
+        <h1>Tic Tac Toe</h1>
+      </div>
+
+      <!-- scoreboard -->
+      <div class="scoreBoard">
+        <div class='me'>
+          <p>Me : <span class='myScore'>0</span></p>
+        </div>
+        <div class='ai'>
+          <p>Ai : <span class='aiScore'>0</span></p>
+        </div>
+      </div>
+
+      <!-- tic tac toe board -->
+      <div class="board">
+        <!-- boxes will be displayed here -->
+      </div>
+
+
+      <!-- reset buttom -->
+      <div class="reset">
+        <p>Reset Game</p>
+      </div>
+    </div>
+
+    <!-- footers -->
+    <div class='copyright'>&#169; Ram  2019</div>
+    <div class='sourcecode'>
+      <a target="_blank" rel='noopener noreferrer'
+        href="https://github.com/Ram/Javascript_Projects/tree/proj20">View source code</a>
+    </div>
+
+
+    <!-- audio effects-->
+    <audio data-key='stamp' src="/libs/stamp.mp3"></audio>
+    <audio data-key='fail' src="/libs/fail.mp3"></audio>
+    <audio data-key='win' src="/libs/win.mp3"></audio>
+    <div id='root'></div>
+  </body>
+  <script src='/js/script.js'></script>
+  </html>
