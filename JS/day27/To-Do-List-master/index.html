@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <title>TO-DO-LIST</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <!-- Paste here -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="row">
+       <div class="col mx-auto col-md-8 mt-3 text-center">
+        <div class="alert text-capitalize feedback">
+         write value for item
+        </div>
+        <!-- form -->
+        <form id="itemForm" class="my-3">
+         <h3 class="text-capitalize mb-4">to do list</h3>
+         <div class="input-group">
+          <input type="text" class="form-control text-capitalize" id="itemInput" placeholder="name...">
+          <div class="input-group-append">
+           <button class="btn btn-hover text-capitalize" type="submit">add item</button>
+          </div>
+         </div>
+        </form>
+        <div class="item-container">
+        <div class="item-list my-5">
+        </div>
+        <button type="button" class="btn btn-hover my-3 text-capitalize" id="clear-list">clear items</button>
+       </div>
+      </div>
+     </div>
+    </div>
+   
+      <!-- Add javascript -->
+      <script src="script.js"></script>
+  </body>
+</html>
