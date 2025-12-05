@@ -1,4 +1,3 @@
-const { json } = require("body-parser");
 const fs = require("fs");
 const path = require("path");
 
@@ -16,21 +15,21 @@ module.exports = class Cart {
       if (!err) {
         cart = JSON.parse(fileContent);
       }
-      // Analyze the cart => Find existng product
+      // Analyze the cart => Find existing product
       const existingProductIndex = cart.products.findIndex(
         (prod) => prod.id === id
       );
       const existingProduct = cart.products[existingProductIndex];
-      let updateProduct;
+      let updatedProduct;
       // Add new product/ increase quantity
       if (existingProduct) {
-        updateProduct = { ...existingProduct };
-        updateProduct.qty = updateProduct.qty + 1;
+        updatedProduct = { ...existingProduct };
+        updatedProduct.qty = updatedProduct.qty + 1;
         cart.products = [...cart.products];
-        cart.products[existingProductIndex] = updateProduct;
+        cart.products[existingProductIndex] = updatedProduct;
       } else {
-        updateProduct = { id: id, qty: 1 };
-        cart.products = [...cart.products, updateProduct];
+        updatedProduct = { id: id, qty: 1 };
+        cart.products = [...cart.products, updatedProduct];
       }
       cart.totalPrice = cart.totalPrice + +productPrice;
       fs.writeFile(p, JSON.stringify(cart), (err) => {
@@ -38,6 +37,7 @@ module.exports = class Cart {
       });
     });
   }
+
   static deleteProduct(id, productPrice) {
     fs.readFile(p, (err, fileContent) => {
       if (err) {
