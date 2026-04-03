@@ -1,0 +1,44 @@
+App{
+  text-align: center;
+  align-items: center;
+}
+
+box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+  margin: 50px auto;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16)0px 1px 4px;
+  padding: 10px;
+  
+}
+p{
+text-align: center;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+button{
+  justify-content: center;
+  padding: 10px;
+  margin: 20px 10px;
+  font-size: 16px;
+  color: #FFFFFF;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.add{
+  background-color: green;
+}
+
+button.sub{
+  background-color: red;
+}
+
+button.reset{
+  background-color: blue;
+}
