@@ -1,0 +1,28 @@
+{
+    "products":[
+        {
+            "id": 10001,
+            "name": "Basic React",
+            "price":30,
+            "in_stock":true
+        },
+        {
+            "id": 10002,
+            "name": "Basic Python",
+            "price":45,
+            "in_stock":false
+        },
+        {
+            "id": 10003,
+            "name": "Basic C++",
+            "price":50,
+            "in_stock":true
+        },
+        {
+            "id": 10004,
+            "name": "Basic Node",
+            "price":55,
+            "in_stock":false
+        }
+    ]
+}
