@@ -1,0 +1,18 @@
+API Key
+676412fd8ea780e52063280b68ab293d
+
+Base URL: https://api.themoviedb.org/3/
+
+Search:
+const url = 'https://api.themoviedb.org/3/search/movie?include_adult=false&language=en-US&page=1';
+
+Now Playing
+https://api.themoviedb.org/3/movie/now_playing
+Popular
+https://api.themoviedb.org/3/movie/popular
+Top Rated
+https://api.themoviedb.org/3/movie/top_rated
+Upcoming
+https://api.themoviedb.org/3/movie/upcoming
+Detail
+https://api.themoviedb.org/3/movie/{movie_id}
